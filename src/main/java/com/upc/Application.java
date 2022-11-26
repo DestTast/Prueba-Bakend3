@@ -22,7 +22,7 @@ public class Application {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("http://177.85.33.53:23476/").allowedMethods("*").allowedHeaders("*");
+                registry.addMapping("/**").allowedOrigins("http://localhost:4200").allowedMethods("*").allowedHeaders("*");
             }
         };
     }
